@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+.s1-slider {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.s1-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.s1-slider-main {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .7s;
+}
+
+.s1-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px 0 20px;
+  border-radius: 40px;
+}
+
+.s1-img {
+  position: relative;
+  height: 70%;
+  width: 65vh;
+  transition: .5s;
+  filter: brightness(.4);
+  border-radius: 40px;
+}
+
+.s1-img.active {
+  height: 100%;
+  width: 110vh;
+  filter: brightness(1);
+}
+
